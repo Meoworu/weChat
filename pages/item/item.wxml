@@ -1,0 +1,19 @@
+<view class='container'>
+  <!-- <view class='header'>
+    <text>{{ title }}</text>
+  </view> -->
+
+  <view class='list'>
+    <view bindtap='goToMovieDetail' wx:for="{{ list }}" class='list-item' wx:key="{{ index }}" data-index="{{ index }}">
+      <image src='{{ item.images.large }}' mode="aspectFill"></image>
+      <view class='info'>
+        <text class='title'>{{ item.title }}</text>
+        <text>{{ item.original_title }}({{ item.year }})</text>
+        <text>导演: <block wx:for="{{ item.directors}}" wx:key="{{ index }}">{{ item.name }}</block></text>
+      </view>
+      <view class='rating'>
+        <text>{{ item.rating.average}}</text>
+      </view>
+    </view>
+  </view>
+</view>

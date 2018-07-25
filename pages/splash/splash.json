@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor" : "#35495e",
+  "navigationBarTitleText" : "豆瓣 · 电影",
+  "navigationBarTextStyle" : "white",
+  "enablePullDownRefresh" : false,
+  "disableScroll": true
+}

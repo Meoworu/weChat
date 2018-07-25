@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "职位",
+  "navigationBarBackgroundColor" : "#35495e",
+  "navigationBarTextStyle" : "white",
+  "enablePullDownRefresh": false
+}

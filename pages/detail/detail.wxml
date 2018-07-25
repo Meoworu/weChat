@@ -1,0 +1,64 @@
+<!-- <loading hidden="{{loadingHidden}}">正在加载...</loading> -->
+<scroll-view scroll-y="true" bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower" style="height: 1334rpx">
+  <!-- 分割线 -->
+  <view class="divLine"></view>
+  <!-- 整体item样式 -->
+  <view class="containsView" >
+  <!--顶部样式-->
+    <view class="topContainsView">
+      <image class="profileImage" src="{{duanDetail.profile_image}}" />
+      <view class="topRightView">
+        <text class="topRightName">{{duanDetail.name}}</text>
+        <text class="topRightTime">{{duanDetail.passtime}}</text>
+      </view>
+    </view>
+    <!-- 中间内容 -->
+    <text class="centerContent" data-index='{{index}}'>{{duanDetail.text}}</text>
+    <!-- 底部view样式 -->
+    <view class="bottomView">
+      <view class="bottomItemView">
+        <image class="bottomItemImage" src="../../images/ding.png" />
+        <text class="bottomItemText">{{duanDetail.ding}}</text>
+      </view>
+      <view class="bottomItemView">
+        <image class="bottomItemImage" src="../../images/cai.png" />
+        <text class="bottomItemText">{{duanDetail.cai}}</text>
+      </view>
+      <view class="bottomItemView">
+        <image class="bottomItemImage" src="../../images/share.png" />
+        <text class="bottomItemText">{{duanDetail.repost}}</text>
+      </view>
+      <view class="bottomItemView">
+        <image class="bottomItemImage" src="../../images/comment.png" />
+        <text class="bottomItemText">{{duanDetail.comment}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 分割线 -->
+  <view class="divLine"></view>
+  <view class='commentTitle' wx-if="{{commentList.length > 0}}">
+    <text>最新评论</text>
+  </view>
+
+  <!--  评论列表  -->
+  <block wx:for-items="{{commentList}}" wx:key="data_id">
+    <view class="commentContentView">
+      <image class="commentImage" src="{{item.user.profile_image}}" />
+      <view class="commentRight">
+        <view class='userView'>
+          <view style='float:left'>
+            <wxs src='./detail.wxs' module='filters' />
+            <text class='genderText' style='color:{{filters.status(item.user.sex).y}}'>{{filters.status(item.user.sex).x}}</text>
+            <text class='nameText'>{{item.user.username}}</text>
+          </view>
+          <view style='float:right'>
+            <text style='float:left;font-size:25rpx;margin-right:15rpx'>{{item.like_count}}</text>
+            <image style='width:30rpx;height:30rpx;float:right' src='../../images/ding.png'></image>
+          </view>
+        </view>
+        <text class="commentContent">{{item.content}}</text>
+      </view>
+    </view>
+  </block>
+</scroll-view>

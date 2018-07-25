@@ -1,0 +1,55 @@
+/*  滚动图的图片样式  */
+.slide-image {
+  /* display: flex; */
+  height: 100%;
+  width: 100%;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.board-item {
+  flex: 1;
+  display: flex;
+  /*  可以设置点击时高亮  */
+  cursor: pointer;
+  background-color: #efefef;
+  margin: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 0rpx;
+  border-radius: 10rpx;
+  /* text-align: center; */
+  /* justify-content: space-between; */
+}
+
+.board-item text {
+  /* height: 100%; */
+  flex: 1;
+  font-size: 30rpx;
+  color: #646464;
+}
+
+.board-item image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.header {
+  padding: 40rpx 80rpx 20rpx;
+}
+
+.title {
+  display: block;
+  font-size: 50rpx;
+  text-align: center
+}
+
+.description {
+  display: block;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  color: #888;
+  text-align: center
+}

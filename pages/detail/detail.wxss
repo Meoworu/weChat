@@ -1,0 +1,64 @@
+.commentTitle {
+  display: flex; 
+  height: 60rpx;
+  width: 100%;
+  background : #fff;
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  align-items: flex-end;
+  color: #ccc
+}
+
+/*中间文字样式*/
+.centerContent{
+  font-size: 33rpx;
+}
+
+.userView {
+  height: 30rpx;
+  margin-bottom: 10rpx;
+  /* padding: 0rpx; */
+  /* background: #f90; */
+}
+
+.commentContentView { 
+  flex-direction: row;
+  padding: 20rpx;
+  padding-top: 30rpx;
+  /* padding-bottom: 50rpx; */
+  border-bottom: solid 0.3rpx #e1e1e1
+}
+
+.commentImage {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  border-radius: 30rpx;
+  background: #f00
+}
+
+.commentRight {
+  padding-left: 80rpx;
+  padding-right: 20rpx;
+}
+
+.commentContent {
+  font-size: 30rpx;
+  flex: 1;
+}
+
+.genderText {
+  font-size: 25rpx;
+  line-height: 30rpx;
+  /* text-align: center; */
+  /* color: #69f; */
+  float: left;
+}
+
+.nameText {
+  font-size: 25rpx;
+  line-height: 30rpx;
+  text-align: center;
+  float: left;
+  margin-left: 10rpx;
+}

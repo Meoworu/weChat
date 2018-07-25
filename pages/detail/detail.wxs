@@ -1,0 +1,22 @@
+function status(gender) {
+  var statusJson = {};
+  var x = "";
+  var y = "";
+  switch(gender){
+    case "m":
+      x = "♂";
+      y = "#69f";
+      break;
+    default:
+      x = "♀";
+      y = "#f00";
+      break;
+  }
+  statusJson.x = x;
+  statusJson.y = y;
+  return statusJson;
+}
+
+module.exports = {
+  status: status
+}

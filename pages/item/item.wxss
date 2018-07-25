@@ -1,0 +1,46 @@
+/* .list {
+  padding: 20rpx;
+} */
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  border-bottom: 0.5rpx solid #eee;
+  cursor: pointer
+}
+
+.list-item image {
+  width: 120rpx;
+  height: 150rpx;
+}
+
+.info {
+  display: flex;
+  flex: 1;
+  padding-left: 20rpx;
+  flex-direction: column
+}
+
+.info text {
+  font-size: 24rpx;
+  color: #646464;
+  margin-bottom: 5rpx;
+}
+
+text.title {
+  font-size: 30rpx;
+  color: #ccc;
+  margin-bottom: 10rpx;
+}
+
+.rating {
+  width: 50rpx;
+  line-height: 30rpx;
+  border-radius: 15rpx;
+  background-color: #f00;
+  align-self: flex-start;
+  font-size: 16rpx;
+  text-align: center;
+  color:#fff;
+}

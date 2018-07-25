@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/splash/splash",
+    "pages/index/index",
+    "pages/job/job",
+    "pages/message/message",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/item/item",
+    "pages/movieDetail/movieDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "觅眸",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh" : false
+  },
+  "tabBar": {
+    "color" : "#ccc",
+    "selectedColor" : "#69f",
+    "backgroundColor" : "#fff", 
+    "list":[{
+        "pagePath": "pages/index/index",
+        "text": "简历",
+        "iconPath" : "/images/ResumeList.png",
+        "selectedIconPath" : "/images/ResumeList_HighLighted.png"
+      },
+      {
+        "pagePath": "pages/job/job",
+        "text": "职位",
+        "iconPath": "/images/JobList.png",
+        "selectedIconPath": "/images/JobList_HighLighted.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/images/Message.png",
+        "selectedIconPath": "/images/Message_HighLighted.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "/images/Mine.png",
+        "selectedIconPath": "/images/Mine_HighLighted.png"
+      }]
+  }
+}

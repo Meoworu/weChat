@@ -1,0 +1,38 @@
+<view class='container'>
+  <view class='slide'>
+    <swiper circular="true" indicator-dots="{{ indecatorDots }}" autoplay='{{ autoplay }}' interval='{{ interval }}' duration='{{ duration }}'>
+      <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src='{{ item }}' class='slide-image' mode="aspectFill"></image>
+        </swiper-item>
+      </block>    
+    </swiper>
+
+    <view class="header">
+      <text class="title">豆瓣电影榜单集合</text>
+      <text class="description">最新，最IN的影视信息收集~</text>
+    </view>
+  </view>
+  <view class='board'>
+    <!-- <view class='board-item'>
+      <text>正在热映</text>
+      <image src='../../images/arrowright.png' mode="aspectFill"></image>
+    </view> -->
+
+    <!-- <view class='board-item'>
+      <text>正在热映</text>
+      <image src='../../images/arrowright.png' mode="aspectFill"></image>
+    </view> -->
+
+    <!-- <view class='board-item'>
+      <text>正在热映</text>
+      <image src='../../images/arrowright.png' mode="aspectFill"></image>
+    </view> -->
+    <block wx:for="{{ contents }}" wx:key="{{ index }}">
+      <view class='board-item' bindtap='go2detail' data-index="{{ index }}">
+        <text>{{ item.name }}</text>
+        <image src='../../images/arrowright.png' mode="aspectFill"></image>
+      </view>
+    </block>
+  </view>
+</view>
